@@ -1,0 +1,42 @@
+{
+  "pickle": {
+    "load": "pickle.load",
+    "read-mode": "rb",
+    "file-types": [".pickle"]
+  },
+  "json": {
+    "load": "json.load",
+    "read-mode": "r",
+    "file-types": [".json"]
+  },
+  "yaml": {
+    "load": "yaml.safe_load",
+    "read-mode": "r",
+    "file-types": [".yaml", ".yml"]
+  },
+  "toml": {
+    "load": "toml.load",
+    "read-mode": "r",
+    "file-types": [".toml"]
+  },
+  "xml": {
+    "load": "functions.parse_xml",
+    "read-mode": "r",
+    "file-types": [".xml"]
+  },
+  "csv": {
+    "load": "functions.read_csv_data",
+    "read-mode": "r",
+    "file-types": [".csv"]
+  },
+  "text": {
+    "load": "file.read",
+    "read-mode": "r",
+    "file-types": [".txt"]
+  },
+  "plist": {
+    "load": "plistlib.load",
+    "read-mode": "rb",
+    "file-types": [".plist"]
+  }
+}
